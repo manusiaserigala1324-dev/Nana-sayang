@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Selamat Ulang Tahun, Nana! 🎉🌸</title>
+  <style>
+    :root{
+      --bg1:#fff5fb;
+      --bg2:#e8f5ff;
+      --primary:#ff4fa1;
+      --accent:#7c4dff;
+      --ink:#2c2c2c;
+      --card:#ffffffcc;
+      --shadow:0 20px 60px rgba(0,0,0,.12);
+      --radius:28px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: ui-rounded, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--ink);
+      background: radial-gradient(1200px 800px at 20% -10%, var(--bg1), transparent 70%),
+                  radial-gradient(1200px 800px at 120% 110%, var(--bg2), transparent 70%),
+                  linear-gradient(180deg, #ffffff, #fbfcff);
+      overflow-x:hidden;
+    }/* Floating petals */
+.petal{position:fixed; top:-40px; width:18px; height:18px; pointer-events:none; opacity:.8; filter:drop-shadow(0 4px 6px rgba(0,0,0,.15));}
+.petal svg{width:100%; height:100%;}
+@keyframes drift{
+  0%{transform:translateY(-40px) rotate(0deg)}
+  100%{transform:translateY(120vh) rotate(360deg)}
+}
+
+.wrap{min-height:100%; display:grid; place-items:center; padding:40px 16px}
+.card{
+  width:min(920px, 92vw);
+  background:var(--card);
+  backdrop-filter: blur(8px);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px; position:relative; overflow:hidden;
+}
+.ribbon{
+  position:absolute; inset:auto -12px -12px auto; transform:rotate(-12deg);
+  background:linear-gradient(135deg, var(--primary), #ffa1cb);
+  color:#fff; padding:10px 24px; border-radius:16px; font-weight:700; letter-spacing:.5px; box-shadow:0 12px 30px rgba(255,79,161,.35);
+}
+h1{margin:8px 0 4px; font-size:clamp(28px, 5vw, 48px); line-height:1.05}
+.subtitle{font-size:clamp(14px, 2.5vw, 18px); opacity:.8}
+
+.grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:18px; margin:26px 0}
+.panel{background:#fff; border-radius:22px; padding:18px; box-shadow:0 10px 26px rgba(0,0,0,.08);}
+.panel h3{margin:8px 0 4px}
+.panel p{margin:6px 0 0}
+
+.cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+button{
+  appearance:none; border:0; padding:12px 18px; border-radius:999px; font-weight:700; cursor:pointer;
+  background:linear-gradient(135deg, var(--accent), #a78bfa); color:white; box-shadow:0 12px 30px rgba(124,77,255,.35);
+  transition: transform .12s ease, box-shadow .2s ease; letter-spacing:.3px
+}
+button:hover{transform:translateY(-2px); box-shadow:0 18px 40px rgba(124,77,255,.45)}
+.ghost{background:#f5f3ff; color:#4c3bff; box-shadow:0 6px 18px rgba(76,59,255,.18)}
+
+/* Flower gallery */
+.flowers{display:grid; grid-template-columns:repeat(auto-fit, minmax(160px,1fr)); gap:16px; margin-top:4px}
+.flower-card{background: #fff; border-radius:22px; padding:16px; display:grid; place-items:center; gap:10px; box-shadow:0 10px 26px rgba(0,0,0,.08)}
+.flower-card span{font-weight:700}
+.svg-wrap{width:120px; height:120px}
+
+footer{margin-top:18px; text-align:center; font-size:14px; opacity:.7}
+
+/* Cute separator */
+.divider{height:12px; margin:18px 0; background:
+  radial-gradient(circle at 10% 50%, #ffd6ea 3px, transparent 4px) repeat-x,
+  radial-gradient(circle at 50% 50%, #d6e8ff 3px, transparent 4px) repeat-x,
+  radial-gradient(circle at 90% 50%, #ffe4a3 3px, transparent 4px) repeat-x;
+  background-size:24px 12px,24px 12px,24px 12px;
+  background-position:0 0, 8px 4px, 16px 8px;
+  opacity:.9; border-radius:999px
+}
+
+@media (prefers-reduced-motion: reduce){
+  .petal{display:none}
+  button{transition:none}
+}
+
+  </style>
+</head>
+<body>
+  <!-- floating petals (generated with JS) -->  <div class="wrap">
+    <main class="card" role="main" aria-label="Kartu ucapan ulang tahun untuk Nana">
+      <div class="ribbon">🌟 Keren & Imut 🌟</div>
+      <header>
+        <h1>Selamat Ulang Tahun, <span style="color:var(--primary)">Nana</span>! 🎂✨</h1>
+        <p class="subtitle">Semoga harimu se-cantik senyummu, selucu tawa kamu, dan sekeren gaya kamu. Hari ini panggungnya Nana! 💖</p>
+      </header><div class="divider" aria-hidden="true"></div>
+
+  <section class="grid">
+    <article class="panel">
+      <h3>Doa & Harapan 🌈</h3>
+      <p>Semoga setiap langkahmu dipeluk bahagia, rezeki lancar, dan mimpi yang kamu simogakan satu-satu jatuh ke pangkuan. Amin! 🙏</p>
+    </article>
+    <article class="panel">
+      <h3>Catatan Lucu 😆</h3>
+      <p>Umur boleh nambah, tapi imutnya… kok makin maksimal ya? Tolong jelaskan, ini bakat atau setting pabrik? 🤭</p>
+    </article>
+    <article class="panel">
+      <h3>Pesan Keren 💫</h3>
+      <p>Terus jadi versi paling kece dari dirimu. Kalau bintang punya fans, yakin deh mereka juga nge-fans sama Nana.</p>
+    </article>
+  </section>
+
+  <h3 style="margin:6px 0 4px">Buat Nana yang suka bunga 🌸</h3>
+  <p class="subtitle">Pilih satu (atau semua!)—setiap bunga bawa doa yang wangi.
+  </p>
+
+  <div class="flowers" aria-label="Galeri bunga">
+    <div class="flower-card" aria-label="Bunga mawar untuk cinta dan keberanian">
+      <div class="svg-wrap" aria-hidden="true"> 
+        <!-- Rose -->
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="rose" x1="0" x2="1">
+              <stop offset="0" stop-color="#ff7aa8"/>
+              <stop offset="1" stop-color="#ff3571"/>
+            </linearGradient>
+            <linearGradient id="stem" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#3fcf8e"/>
+              <stop offset="1" stop-color="#169a62"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="120" height="120" rx="18" fill="#fff6fb"/>
+          <g transform="translate(20,14)">
+            <path d="M40 30c18-14 30-2 26 10-4 12-20 22-26 24-6-2-22-12-26-24-4-12 8-24 26-10z" fill="url(#rose)"/>
+            <circle cx="40" cy="36" r="10" fill="#ff99bb"/>
+            <path d="M40 58v30" stroke="url(#stem)" stroke-width="6" stroke-linecap="round"/>
+            <path d="M40 76c-10 2-18 8-20 14 10-2 18-8 20-14z" fill="#1fbf80"/>
+            <path d="M40 70c10 2 18 8 20 14-10-2-18-8-20-14z" fill="#24d291"/>
+          </g>
+        </svg>
+      </div>
+      <span>🌹 Mawar</span>
+      <small>Cinta & keberanian buat Nana.</small>
+    </div>
+    <div class="flower-card" aria-label="Bunga tulip untuk semangat baru">
+      <div class="svg-wrap" aria-hidden="true">
+        <!-- Tulip -->
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="tulip" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#ffd166"/>
+              <stop offset="1" stop-color="#ff9f1c"/>
+            </linearGradient>
+            <linearGradient id="stem2" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#43d17e"/>
+              <stop offset="1" stop-color="#1aa56a"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="120" height="120" rx="18" fill="#fffaf1"/>
+          <g transform="translate(24,18)">
+            <path d="M36 12c8 10 20 10 20 26 0 16-18 22-20 22s-20-6-20-22c0-16 12-16 20-26z" fill="url(#tulip)"/>
+            <path d="M36 60v28" stroke="url(#stem2)" stroke-width="6" stroke-linecap="round"/>
+            <path d="M36 74c-8 2-14 6-16 12 8-2 14-6 16-12z" fill="#20c57b"/>
+            <path d="M36 66c8 2 14 6 16 12-8-2-14-6-16-12z" fill="#29da8a"/>
+          </g>
+        </svg>
+      </div>
+      <span>🌷 Tulip</span>
+      <small>Semangat baru tiap pagi.</small>
+    </div>
+    <div class="flower-card" aria-label="Bunga daisy untuk kebahagiaan sederhana">
+      <div class="svg-wrap" aria-hidden="true">
+        <!-- Daisy -->
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="120" height="120" rx="18" fill="#f4fbff"/>
+          <g transform="translate(22,18)">
+            <circle cx="38" cy="34" r="10" fill="#ffd166"/>
+            <g fill="#ffffff" stroke="#d7e6ff" stroke-width="2">
+              <ellipse cx="38" cy="18" rx="8" ry="14"/>
+              <ellipse cx="38" cy="50" rx="8" ry="14"/>
+              <ellipse cx="22" cy="34" rx="14" ry="8"/>
+              <ellipse cx="54" cy="34" rx="14" ry="8"/>
+              <ellipse cx="28" cy="22" rx="8" ry="14" transform="rotate(-45 28 22)"/>
+              <ellipse cx="48" cy="22" rx="8" ry="14" transform="rotate(45 48 22)"/>
+              <ellipse cx="28" cy="46" rx="8" ry="14" transform="rotate(45 28 46)"/>
+              <ellipse cx="48" cy="46" rx="8" ry="14" transform="rotate(-45 48 46)"/>
+            </g>
+            <path d="M38 58v28" stroke="#1fbf80" stroke-width="6" stroke-linecap="round"/>
+            <path d="M38 72c-8 2-14 6-16 12 8-2 14-6 16-12z" fill="#20c57b"/>
+            <path d="M38 64c8 2 14 6 16 12-8-2-14-6-16-12z" fill="#29da8a"/>
+          </g>
+        </svg>
+      </div>
+      <span>🌼 Daisy</span>
+      <small>Bahagia yang sederhana, tapi nyata.</small>
+    </div>
+    <div class="flower-card" aria-label="Buket campur untuk Nana">
+      <div class="svg-wrap" aria-hidden="true">
+        <!-- Bouquet -->
+        <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="120" height="120" rx="18" fill="#fff9f0"/>
+          <g transform="translate(18,16)">
+            <g>
+              <circle cx="28" cy="28" r="10" fill="#ff7aa8"/>
+              <circle cx="56" cy="24" r="9" fill="#ffd166"/>
+              <circle cx="44" cy="40" r="8" fill="#7c4dff"/>
+            </g>
+            <path d="M40 48l12 40H28l12-40z" fill="#f0d6ff" stroke="#c7a6ff"/>
+            <path d="M28 88h24" stroke="#b893ff" stroke-width="6" stroke-linecap="round"/>
+            <path d="M40 48c-8 10-20 12-26 20 12-2 18-6 26-20z" fill="#29da8a"/>
+            <path d="M40 48c8 10 20 12 26 20-12-2-18-6-26-20z" fill="#20c57b"/>
+          </g>
+        </svg>
+      </div>
+      <span>💐 Buket</span>
+      <small>Paket lengkap: cantik, wangi, happy!</small>
+    </div>
+  </div>
+
+  <div class="cta">
+    <button id="wishBtn" aria-label="Tombol buat harapan">Buat Harapan ✨</button>
+    <button class="ghost" id="shareBtn" aria-label="Salin pesan ucapan">Salin Ucapan 📋</button>
+  </div>
+
+  <footer>Dengan banyak cinta dan tawa untukmu hari ini. — Dari seseorang yang kagum sama Nana 🌷</footer>
+</main>
+
+  </div>  <script>
+    // generate floating petals
+    const colors = ["#ff7aa8","#ffa1cb","#ffd6ea","#d6e8ff","#ffe4a3"];
+    function spawnPetal(){
+      const p = document.createElement('div');
+      p.className='petal';
+      const size = 12 + Math.random()*18;
+      p.style.width = p.style.height = size + 'px';
+      p.style.left = Math.random()*100 + 'vw';
+      p.style.animation = `drift ${8 + Math.random()*8}s linear forwards`;
+      const c = colors[(Math.random()*colors.length)|0];
+      p.innerHTML = `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5 2 10 7 8 12s-9 6-12 3S7 4 12 2z" fill="${c}"/></svg>`;
+      document.body.appendChild(p);
+      setTimeout(()=>p.remove(), 18000);
+    }
+    let petalTimer = setInterval(spawnPetal, 500);
+
+    // wish button burst
+    document.getElementById('wishBtn').addEventListener('click', ()=>{
+      for(let i=0;i<20;i++) setTimeout(spawnPetal, i*60);
+      alert('Keinginan terkirim! Semoga semua yang terbaik untuk Nana 🎉');
+    });
+
+    // copy message
+    document.getElementById('shareBtn').addEventListener('click', async ()=>{
+      const text = `Selamat ulang tahun, Nana! Semoga harimu se-cantik, selucu, dan sekeren kamu. Semoga sehat, bahagia, dan mimpimu jadi nyata. 💖🌸`;
+      try{
+        await navigator.clipboard.writeText(text);
+        const btn = document.getElementById('shareBtn');
+        const old = btn.textContent;
+        btn.textContent = 'Tersalin! ✅';
+        setTimeout(()=>btn.textContent = old, 1600);
+      }catch(e){
+        alert('Tahan/klik lama lalu pilih Salin ya.');
+      }
+    });
+  </script></body>
+</html>
